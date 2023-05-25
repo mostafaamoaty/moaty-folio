@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family:
+            'SF Pro Text',
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Helvetica,
+            sans-serif;
+        @apply scroll-smooth;
+    }
+}
+
+body {
+    background-color: #1c2026;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #f0f4f8;
+}
+
+p,
+span,
+a {
+    color: #adb3bc;
+}
+
+a {
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        color: #aeef9d;
+    }
+}
